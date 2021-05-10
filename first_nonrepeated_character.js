@@ -1,3 +1,5 @@
+//To print out the first non-repeated character in a string
+
 const string = "hello_there_how_are_you";
  
 //length function
@@ -10,7 +12,7 @@ const len = (string) =>{
 }
 
 for(let i = 0; i< len(string)-1; i++){
-    let c= 0
+    let c= 0;
     for(let j = i+1; j< len(string); j++){
         if(string[i] === string[j]){
             c++;
