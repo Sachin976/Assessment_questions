@@ -1,3 +1,5 @@
+//To find duplicate numbers in an array if it contains mutiple duplicates
+
 //length function
 const len = (arr) =>{
     let l = 0;
@@ -7,7 +9,7 @@ const len = (arr) =>{
     return l;
 }
 const arr = [1,2,3,4,5,4,5,3,2,1,5,3,4,6,1,5,3,7,8,9];
-let duplicate = {}
+let duplicate = {};
 
 for(let i = 0; i < len(arr); i++){
     let c = 0;
@@ -19,12 +21,12 @@ for(let i = 0; i < len(arr); i++){
     let text = "duplicates_of_" + arr[i];
     if(c >= 1){
         if(duplicate[text]){
-            continue
+            continue;
         }else{
-            duplicate[text] = c
+            duplicate[text] = c;
         }
 
     }
 
 }
-console.log(duplicate)
+console.log(duplicate);
