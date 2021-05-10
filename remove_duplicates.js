@@ -1,9 +1,11 @@
-let new_arr = []
-const arr = [1,2,3,2,4,1,4,3,1,4,3,4,1,3,5]
+//To remove the duplicates from a given array
+
+let new_arr = [];
+const arr = [1,2,3,2,4,1,4,3,1,4,3,4,1,3,5];
 
 //length function
 const len =(arr) => {
-    let l = 0
+    let l = 0;
     while(arr[l] !== undefined){
         l++;
     }
@@ -22,21 +24,21 @@ const sort = (arr) =>{
 
         }
     }
-    return arr
+    return arr;
 }
 
 sort(arr);
-new_arr.push(arr[0])
+new_arr.push(arr[0]);
 
 //remove duplicates
 for(let k =1; k <len(arr); k++){
     if(arr[k] === arr[k-1]){
-        continue
+        continue;
     }else{
-        new_arr.push(arr[k])
+        new_arr.push(arr[k]);
     }
 }
 
-console.log(new_arr)
+console.log(new_arr);
 
 
