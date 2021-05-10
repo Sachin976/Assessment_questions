@@ -1,3 +1,5 @@
+//To find all pairs of an integer array whose sum is equal to a given number
+
 const number_to_check = 5;
 const arr = [1,2,5,0,3,4,6,2,1,5,6,2,6,2]
 
