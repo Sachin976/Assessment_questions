@@ -1,3 +1,5 @@
+//To reverse the words in a given string
+
 const string = "The quick brown fox jumps over the lazy dog";
 //length function
 const len = (arr) =>{
@@ -10,7 +12,7 @@ const len = (arr) =>{
 
 let arr = string.split(" ");
 let reverse_arr = [];
-let length = len(arr)
+let length = len(arr);
 let end = length -1;
 let i = 0;
 while(i < length){
@@ -19,4 +21,4 @@ while(i < length){
     i++;
 }
 
-console.log(reverse_arr.join(" "))
+console.log(reverse_arr.join(" "));
