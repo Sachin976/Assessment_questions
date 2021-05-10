@@ -1,3 +1,5 @@
+//To find the greatest and smallest number in an unsorted array
+
 const arr = [1,5,2,4,52,3,21,54,86,25,78,34,29,62,8];
 let max = 0;
 let min = 99;
