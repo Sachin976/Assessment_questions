@@ -1,29 +1,30 @@
-const s = "hello"
-const s1 = 'naman'
+//To check whether a string is palindrome or not
+const s = "hello";
+const s1 = 'naman';
 
 //length function
 const len = (s) =>{
-    let l = 0
+    let l = 0;
     while(s[l] !== undefined){
-        l++
+        l++;
     }
-    return l
+    return l;
 }
 //Palindrome function
 const palin = (s) =>{
-    let arr=[]
+    let arr=[];
     for(let i = len(s); i>=0;i--){
-        arr.push(s[i])
+        arr.push(s[i]);
     }
-    arr.shift()
-    let rev_s = arr.join("")
+    arr.shift();
+    let rev_s = arr.join("");
     if(rev_s === s){
-        console.log("Given string is palindrome")
+        console.log("Given string is palindrome");
     }else{
-        console.log("Given string is not a palindrome")
+        console.log("Given string is not a palindrome");
     }
 }
 
-palin(s)
-palin(s1)
+palin(s);
+palin(s1);
 
