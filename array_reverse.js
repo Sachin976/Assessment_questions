@@ -1,3 +1,5 @@
+//To reverse an aray
+
 //length function
 const len = (arr) =>{
     let l = 0;
@@ -17,4 +19,4 @@ while(i < length){
     end--;
     i++;
 }
-console.log(arr2)
+console.log(arr2);
