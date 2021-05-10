@@ -1,5 +1,7 @@
-const string = "pneumonoultramicroscopicsilicovolcanoconiosis"
-let count = {}
+//To count characters in a string
+
+const string = "pneumonoultramicroscopicsilicovolcanoconiosis";
+let count = {};
 
 //length fucntion
 const len = (string) =>{
@@ -20,4 +22,4 @@ for(let i = 0; i < len(string) ;i++){
     }
 }
 
-console.log(count)
+console.log(count);
