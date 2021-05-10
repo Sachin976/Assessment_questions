@@ -1,6 +1,8 @@
-const string_1 = "hello"
-const string_2 = "listen"
-const string_3 = "silent"
+//To check whether two strings are anagrams of each other
+
+const string_1 = "hello";
+const string_2 = "listen";
+const string_3 = "silent";
 
 //length function
 const len = (string) =>{
@@ -16,22 +18,22 @@ const anagram = (text1,text2) =>{
     let c = 0;
     if(len(text1) !== len(text2)){
         console.log("Not anagram");
-        return
+        return;
     }else{
         for(let i = 0; i< len(text1);i++){
             for(let j = 0; j< len(text2);j++){
                 if(text1[i] == text2[j]){
                     c+=1;
-                    break
+                    break;
                 }
             }
         }
         if(c === len(text1)){
-            console.log("Anagram")
-            return
+            console.log("Anagram");
+            return;
         }
     }
 }
 
-anagram(string_1,string_2)
-anagram(string_2,string_3)
+anagram(string_1,string_2);
+anagram(string_2,string_3);
