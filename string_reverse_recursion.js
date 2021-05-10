@@ -1,3 +1,5 @@
+//To reverse a given string through recursion
+
 const string = "HelloWorld";
 
 //length function
@@ -11,11 +13,11 @@ const len = (string) =>{
 let end = len(string) - 1;
 const reverse = (string,end) =>{
     if(end < 0){
-        return ""
+        return "";
     }else{
-        let rev = string[end] + reverse(string,end-1)
-        return rev
+        let rev = string[end] + reverse(string,end-1);
+        return rev;
     }
 }
-let reverse_string = reverse(string,end)
-console.log(`Reverse of the string "${string}" is: ${reverse_string}`)
+let reverse_string = reverse(string,end);
+console.log(`Reverse of the string "${string}" is: ${reverse_string}`);
