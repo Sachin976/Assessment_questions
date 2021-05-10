@@ -1,3 +1,5 @@
+//To find out the duplicate of a number in an array
+
 //length function
 const len = (arr) =>{
     let l = 0;
