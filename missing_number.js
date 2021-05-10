@@ -1,3 +1,5 @@
+//To find out the missing integer in an array of 1 to 100
+
 //length function
 const len = (arr) =>{
     let l = 0;
