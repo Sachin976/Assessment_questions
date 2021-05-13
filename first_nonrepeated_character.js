@@ -11,14 +11,19 @@ const len = (string) =>{
     return l;
 }
 
+let rep = "";
 for(let i = 0; i< len(string)-1; i++){
     let c= 0;
     for(let j = i+1; j< len(string); j++){
         if(string[i] === string[j]){
             c++;
+            if(!rep.includes(string[i])){
+                rep += string[i];
+                break;
+            }
         }
     }
-    if(c === 0){
+    if(!rep.includes(string[i]) && c ===0){
         console.log(`First non repeated character is: ${string[i]}`);
         break;
     }
